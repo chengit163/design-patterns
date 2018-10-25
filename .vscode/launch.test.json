@@ -1,0 +1,30 @@
+{
+    "run": {
+        "default": "",
+        "items": [
+            {
+                "name": "design-patterns",
+                "projectName": "design-patterns",
+                "workingDirectory": "d:\\codes\\VSCode\\design-patterns",
+                "args": [],
+                "vmargs": [],
+                "env": {},
+                "preLaunchTask": ""
+            }
+        ]
+    },
+    "debug": {
+        "default": "",
+        "items": [
+            {
+                "name": "design-patterns",
+                "projectName": "design-patterns",
+                "workingDirectory": "d:\\codes\\VSCode\\design-patterns",
+                "args": [],
+                "vmargs": [],
+                "env": {},
+                "preLaunchTask": ""
+            }
+        ]
+    }
+}
