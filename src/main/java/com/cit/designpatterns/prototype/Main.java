@@ -1,13 +1,17 @@
 package com.cit.designpatterns.prototype;
 
+import java.util.Date;
+
 public class Main
 {
     public static void main(String[] args)
     {
-        Sheep sheep = new Sheep("Dolly");
-        System.out.println(sheep.name + "@" + Integer.toHexString(sheep.hashCode()));
-
+        Sheep sheep = new Sheep("Dolly", new Date());
+        System.out.println(sheep.name + ":" + sheep.birthday + "@" + Integer.toHexString(sheep.hashCode()));
         Sheep clone = sheep.clone();
-        System.out.println(clone.name + "@" + Integer.toHexString(clone.hashCode()));
+        clone.birthday.setTime(0);
+
+        System.out.println(sheep.name + ":" + sheep.birthday + "@" + Integer.toHexString(sheep.hashCode()));
+        System.out.println(clone.name + ":" + clone.birthday + "@" + Integer.toHexString(clone.hashCode()));
     }
 }
